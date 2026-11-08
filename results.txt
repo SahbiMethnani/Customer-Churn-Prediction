@@ -1,0 +1,52 @@
+=== Aperçu des données ===
+  Churn  AccountWeeks ContractRenewal DataPlan  DataUsage  CustServCalls  DayMins  DayCalls  MonthlyCharge  OverageFee  RoamMins
+0   Yes         112.0             Yes       No       0.00              2    335.5        77           76.0       10.63      12.7
+1   Yes          93.0             Yes       No       0.29              1    328.1       106           71.9        7.59       8.7
+2   Yes          89.0             Yes       No       0.00              1    326.3       112           70.0        8.26       7.5
+3   Yes          75.0             Yes       No       0.00              2    314.6       102           68.0        8.49       5.7
+4   Yes          74.0             Yes       No       0.00              3    314.1        86           73.0       11.12      12.3
+=== Valeurs manquantes avant suppression ===
+Churn              0
+AccountWeeks       1
+ContractRenewal    0
+DataPlan           2
+DataUsage          1
+CustServCalls      0
+DayMins            0
+DayCalls           0
+MonthlyCharge      0
+OverageFee         0
+RoamMins           0
+Forme après dropna : (207, 11)
+=== Répartition de la cible Churn ===
+Churn
+Yes    109
+No      98
+--- Régression Logistique ---
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.83      0.83        23
+           1       0.79      0.79      0.79        19
+
+    accuracy                           0.81        42
+   macro avg       0.81      0.81      0.81        42
+weighted avg       0.81      0.81      0.81        42
+
+Matrice de confusion:
+[[19  4]
+ [ 4 15]]
+--- Arbre de Décision ---
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.83      0.83        23
+           1       0.79      0.79      0.79        19
+
+    accuracy                           0.81        42
+   macro avg       0.81      0.81      0.81        42
+weighted avg       0.81      0.81      0.81        42
+
+Matrice de confusion:
+[[19  4]
+ [ 4 15]]
